@@ -1,28 +1,37 @@
 {
-  "name": "proxify-now",
-  "version": "1.0.3",
-  "description": "run now with respect to http_proxy",
+  "name": "proxify-vercel",
+  "version": "1.0.4",
+  "description": "run vercel with respect to http_proxy",
   "main": "pnode",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/vercel"
   },
   "bin": {
-    "pnow": "./bin/pnow"
+    "pvercel": "bin/vercel"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Horsed/proxify-now.git"
+    "url": "git+https://github.com/jloewe/proxify-vercel"
   },
   "keywords": [
     "now",
+    "vercel",
     "proxy",
     "global-agent",
     "agent"
   ],
-  "author": "Martin Knopf",
+  "author": "Jan Henry Loewe <kontakt@jloewe.net>",
+  "contributors": [
+    "Martin Knopf"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Horsed/proxify-now/issues"
+    "url": "https://github.com/jloewe/proxify-vercel/issues"
   },
-  "homepage": "https://github.com/Horsed/proxify-now#readme"
+  "homepage": "https://github.com/jloewe/proxify-vercel#readme",
+  "dependencies": {
+    "global-agent": "^2.1.12",
+    "vercel": "latest"
+  }
 }
