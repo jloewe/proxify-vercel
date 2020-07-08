@@ -8,7 +8,7 @@
     "start": "node bin/vercel"
   },
   "bin": {
-    "pvercel": "bin/vercel"
+    "vercel": "bin/vercel"
   },
   "repository": {
     "type": "git",
